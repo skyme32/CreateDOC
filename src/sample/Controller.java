@@ -1,9 +1,20 @@
 package sample;
 
 import javafx.event.ActionEvent;
-import javafx.stage.FileChooser;
+import java.io.File;
+import javafx.application.Application;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.layout.StackPane;
+import javafx.scene.layout.VBox;
+import javafx.stage.DirectoryChooser;
 import javafx.stage.Stage;
 import javafx.stage.Window;
+
+import java.io.File;
 
 public class Controller {
 
@@ -12,14 +23,13 @@ public class Controller {
     public void handleSubmitButtonAction(ActionEvent actionEvent) {
 
 
-        FileChooser fileChooser = new FileChooser();
-        fileChooser.setTitle("Open Resource File");
-        fileChooser.showOpenDialog((Window) Stage);
+        DirectoryChooser directoryChooser = new DirectoryChooser();
+        File selectedDirectory = directoryChooser.showDialog((Window) Stage);
 
-        System.out.println(fileChooser.getTitle());
-        System.out.println(fileChooser.getExtensionFilters());
-        System.out.println(fileChooser.getInitialDirectory());
-        System.out.println(fileChooser.getInitialFileName());
-        System.out.println(fileChooser.getSelectedExtensionFilter());
+        if(selectedDirectory == null){
+            System.out.println("No Directory selected");
+        }else {
+            System.out.println(selectedDirectory.getAbsolutePath());
+        }
     }
 }
