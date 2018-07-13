@@ -20,24 +20,16 @@
     <Button text="Path" GridPane.columnIndex="2" GridPane.rowIndex="2" onAction="#handleSubmitPathdesti"/>
 
     <Label text="Path Jobs:" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
-    <TextField fx:id="inputFiles" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+    <TextField fx:id="inputFiles" GridPane.columnIndex="1" GridPane.rowIndex="3" text="pepe"/>
     <Button text="Path" GridPane.columnIndex="2" GridPane.rowIndex="3" onAction="#handleSubmitPathFiles"/>
 
     <Label text="Environment:" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
     <TextField fx:id="env_var" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
 
-    <Label text="Environment:" GridPane.columnIndex="0" GridPane.rowIndex="5"/>
-    <TextField fx:id="env_var2" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
-
-    <Label text="Environment:" GridPane.columnIndex="0" GridPane.rowIndex="6"/>
-    <TextField fx:id="env_var3" GridPane.columnIndex="1" GridPane.rowIndex="6"/>
-
-    <Label text="Environment:" GridPane.columnIndex="0" GridPane.rowIndex="7"/>
-    <TextField fx:id="env_var4" GridPane.columnIndex="1" GridPane.rowIndex="7"/>
-
     <Button text="Path" GridPane.columnIndex="1" GridPane.rowIndex="8" prefWidth="150" onAction="#handleSubmitButtonAction"/>
 
     <TextArea fx:id="feedback" prefHeight="300" prefWidth="250" wrapText="true" GridPane.columnIndex="0" GridPane.rowIndex="9" GridPane.columnSpan="3"/>
+    
 
 
 
